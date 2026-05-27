@@ -37,7 +37,7 @@ project/
 ## Formatting
 
 - 4 spaces.
-- Same-line opening braces: `void method() {`.
+- Same-line opening braces.
 
 ## CMake Standards
 
