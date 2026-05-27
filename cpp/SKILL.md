@@ -3,8 +3,6 @@ name: cpp
 description: C++23/CMake/Ninja/Clang standards for .cpp/.hpp, CMake, tests, dependencies, and scaffolding.
 ---
 
-# C++23 CMake Ninja
-
 ## Baseline
 
 Default to these unless stricter local conventions exist:
