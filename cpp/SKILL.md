@@ -56,7 +56,6 @@ project/
 
 ## Design Standards
 
-- Use one class per `.hpp` / `.cpp` pair; do not place multiple classes in the same file.
 - RAII and deterministic ownership; Rule of Zero unless ownership/lifetime requires special members.
 - Prefer value semantics; encode ownership/borrowing in values, references, smart pointers, and `std::span`.
 - PImpl only when it materially reduces compile-time coupling or ABI exposure.
