@@ -31,6 +31,7 @@ project/
 - Classes, enums, enum classes, namespaces: `PascalCase`
 - Files: `PascalCase.cpp` / `PascalCase.hpp`, matching the primary class
 - Functions, methods, locals, folders: `camelCase`
+- Getters and setters: prefix with `get` / `set`, e.g. `getValue()` / `setValue(...)`
 - Members: `camelCase_`
 - Constants: `SCREAMING_SNAKE_CASE`
 
@@ -55,6 +56,9 @@ project/
 
 ## Design Standards
 
+- Prefer one primary class per `.hpp` / `.cpp` pair; keep tightly coupled helper types private or local unless they are reusable concepts.
+- Split code into cohesive modules/folders by responsibility; avoid dumping unrelated classes or utilities into shared catch-all files.
+- Entry-point files wire modules together; they do not implement domain logic.
 - RAII and deterministic ownership; Rule of Zero unless ownership/lifetime requires special members.
 - Prefer value semantics; encode ownership/borrowing in values, references, smart pointers, and `std::span`.
 - PImpl only when it materially reduces compile-time coupling or ABI exposure.
