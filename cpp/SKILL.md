@@ -44,6 +44,7 @@ project/
 
 - Target-based CMake; avoid global include paths, definitions, and options unless intentionally project-wide.
 - Target-scoped C++23 compile features; expose as `PUBLIC` only when consumers need it.
+- Generate `compile_commands.json` by default.
 - Collect project sources with GLOB_RECURSE.
 - Add project warnings via an interface target such as `project_options`, or a `cmake/` helper.
 - Warnings as errors: project-owned targets only, never third-party targets.
